@@ -1,0 +1,34 @@
+@import "_reset";
+@import "_nav";
+@import "_slider";
+@import "_products";
+@import "_pricing";
+@import "_contact";
+@import "_footer";
+
+$turquoise: #00cdac;
+
+* {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1024px;
+    // height: 100%;
+    margin: 0 auto;
+    // border: 1px solid red;
+    .row {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

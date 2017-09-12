@@ -1,0 +1,88 @@
+.main-contact {
+    height: 600px;
+}
+
+.col-3-5 {
+    width: 60%;
+    height: 100%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+}
+
+.col-2-5 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    display: block;
+    margin: 20px 0;
+    border: 1px solid #8dead1;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    outline: none;
+    box-shadow: none;
+    &::placeholder {
+        font-family: 'Raleway', sans-serif;
+        color: #c9c9c9;
+        font-size: 22px;
+        padding: 5px;
+    }
+    &:focus {
+        border: 3px solid #8dead1;
+    }
+}
+
+#message {
+    height: 200px;
+}
+
+.checkbox {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin: 50px 10px;
+    #checkbox {
+        visibility: hidden;
+    }
+    .checkbox-text {
+        position: absolute;
+        top: 0;
+        left: 25%;
+        color: #aaaaaa;
+    }
+
+    &::after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        border: 1px solid #8dead1;
+        position: absolute;
+        top: -5%;
+        left: 5%;
+    }
+}
+
+.tick {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    visibility: hidden;
+}
+
+#submit-btn {
+    @extend.main-btn;
+    font-weight: bold;
+    text-transform: none;
+    padding: 14px 100px 14px 100px;
+}

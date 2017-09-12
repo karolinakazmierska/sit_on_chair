@@ -1,0 +1,86 @@
+$turquoise: #00cdac;
+
+.main-nav {
+    width: 100%;
+    background-color: black;
+    height: 40px;
+}
+
+.logo {
+    h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+        span {
+            color: $turquoise;
+        }
+    }
+}
+
+.menu {
+    ul li {
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        }
+    a {
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+}
+
+.submenu {
+    display: none;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: left;
+    // justify-content: center;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 120px;
+    height: 100px;
+    background-color: black;
+    li a {
+        display: block;
+        text-transform: none;
+        font-weight: normal;
+        font-size: 14px;
+        padding: 5px;
+    }
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        padding: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid black;
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    &:after {
+        content: "";
+        width: 120px;
+        height: 20px;
+        position: absolute;
+        top: -20%;
+    }
+}
+
+.menu ul li:hover {
+    & .submenu {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+    }
+}

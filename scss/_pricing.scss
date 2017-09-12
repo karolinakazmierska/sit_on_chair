@@ -1,0 +1,112 @@
+.main-pricing {
+    height: 800px;
+    background-color: #f1f1f1;
+}
+
+h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 0 50px 0;
+    line-height: 2em;
+    border-bottom: 0.5em solid $turquoise;
+}
+
+.plan-1, .plan-2, .plan-3 {
+    height: 520px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-1, .plan-3 {
+    background-color: #f9f9f9;
+    border: 2px solid #d4d4d4;
+}
+
+h5 {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $turquoise;
+    margin: 20px 0;
+}
+
+.price {
+    background-color: #ffffff;
+    border: 1px solid #d4d4d4;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 20px 0;
+
+    .price-zl {
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 25%;
+        color: #c2c2c2;
+        margin-bottom: 10px;
+    }
+    .price-gr {
+        font-size: 16px;
+        color: #c2c2c2;
+    }
+    .price-currency {
+        font-size: 16px;
+        color: #c2c2c2;
+    }
+}
+
+.belt-1 {
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+    background-color: #e4e4e4;
+    color: #8f8f8f;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.belt-2 {
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+    background-color: #f1f1f1;
+    color: #8f8f8f;
+    font-size: 24px;
+    margin-bottom: 80px;
+}
+
+.secondary-btn {
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: $turquoise;
+}
+
+.plan-2 {
+    background-color: #00cdac;
+    border: 2px solid #00cdac;
+    h5 {
+        color: white;
+    }
+    .price-zl {
+        color: #00cdac;
+    }
+    .price-gr {
+        color: #00cdac;
+    }
+    .price-currency {
+        color: #00cdac;
+    }
+    .secondary-btn {
+        color: #00cdac;
+        background-color: white;
+    }
+
+}
